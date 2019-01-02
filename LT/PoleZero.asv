@@ -1,7 +1,7 @@
 close all
 Co = 660e-6;
-Rlight = 5/0.8;
-Rheavy = 5/9;
+Rlight = 5/9;
+Rheavy = 5/0.8;
 Resr = 17.67e-3;
 
 % Light Tf
@@ -20,7 +20,7 @@ R1 = 1e3;
 R2 = 5e3;
 Ak = R2/R1;
 Cont = Ak;
-wpc = 2*pi*250e3;
+wpc = 2*pi*20e3;
 wzc = 0;%sqrt(wpheavy*wplight);
 Cont = Cont*(1+wzc/s)/(1+s/wpc);
 Cont = 1/(s/wpc);
